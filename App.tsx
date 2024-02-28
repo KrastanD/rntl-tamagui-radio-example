@@ -18,7 +18,7 @@ export function RadioGroupItemWithLabel(props: {
   const id = `radiogroup-${props.value}`;
   return (
     <XStack width={300} alignItems="center" space="$4">
-      <RadioGroup.Item value={props.value} id={id}>
+      <RadioGroup.Item value={props.value} id={id} accessible>
         <RadioGroup.Indicator />
       </RadioGroup.Item>
 
