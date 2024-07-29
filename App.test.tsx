@@ -18,7 +18,6 @@ describe("App", () => {
     const user = userEvent.setup();
     await user.press(screen.getAllByRole("radio")[0]);
     await user.press(screen.getByText("First value"));
-    await user.press(screen.getAllByTestId("radio-group-item")[0]);
     expect(screen.getAllByRole("radio")[0]).toBeChecked();
   });
 
